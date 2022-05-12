@@ -9,31 +9,36 @@
   <title>CssMemSlider</title>
 </head>
 <body>
-  <section class="slider-section">
-    <input type="radio" name="slide" id="inp1" checked>
-    <input type="radio" name="slide" id="inp2">
-    <input type="radio" name="slide" id="inp3">
+  <section class="section">
+    <h1>CssMemSlider</h1>
 
-    <div class="frame">
-      <div class="slider">
-        <div id="slide1" class="slide">
-          <div class="slide__img-wrapper">
-            <img src="./img/img3.jpg" class="slide__img"/>
-          </div>
-          <p class="slide__title">Great spring</p>
+    <div class="slider">
+      <input type="radio" name="slide" id="inp1" checked>
+      <input type="radio" name="slide" id="inp2">
+      <input type="radio" name="slide" id="inp3">
+      <input type="radio" name="slide" id="inp4">
+
+      <div class="list">
+        <div id="slide1" class="list__item">
+          <p class="list__item-title">Great spring Slider 1</p>
         </div>
-        <div id="slide2" class="slide">
-          <img src="./img/img2.jpg" class="slide__img" />
-          <p class="slide__title">Beautiful autumn</p>
+        <div id="slide2" class="list__item">
+          <p class="list__item-title">Beautiful autumn Slider 2</p>
         </div>
-        <div id="slide3" class="slide">
-          <img src="./img/img1.jpg" class="slide__img" />
-          <p class="slide__title"></p>
+        <div id="slide3" class="list__item">
+          <p class="list__item-title">Beautiful autumn SLider 3</p>
+        </div>
+        <div id="slide4" class="list__item">
+          <p class="list__item-title">Beautiful autumn SLider 4</p>
         </div>
       </div>
-    </div>
-    <div class="navigation">
-      
+
+      <nav class="nav">
+        <label for="inp1" class="label__slide1"></label>
+        <label for="inp2" class="label__slide2"></label>
+        <label for="inp3" class="label__slide3"></label>
+        <label for="inp4" class="label__slide4"></label>
+      </nav>
     </div>
   </section>
 </body>
