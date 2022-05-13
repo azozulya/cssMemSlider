@@ -11,18 +11,17 @@ body {
   --frame-height: 70vh;
   --slider-number: 4;
   --slider-width: var(--frame-width) * var(--slider-number);
+  --bg-color: black;
 }
 h1 {
   font-size: 3rem;
   text-align: center;
 }
+
 .section {
   width: fit-content;
   margin: 2rem auto;
-  border: solid 3px rgb(53, 52, 52);
   
-    border-radius: 1rem;
-  padding: 2rem;
 }
 .slider {  
   overflow: hidden;
@@ -31,6 +30,9 @@ h1 {
   display: grid;
   grid-template-rows: 1fr 5rem;
   grid-template-columns: 70% 30%;
+  border: solid 3px rgb(53, 52, 52);
+    border-radius: 1rem;
+    padding: 2rem;
 }
 
 .list {
@@ -50,13 +52,15 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .list__item-title {
   margin: 0;
-  padding: 1.6rem;
+  padding: 1.6rem 30% 1.6rem 0;
   font-size: 1.5rem;
-  background-color: black;
+  background-color: var(--bg-color);
   width: 100%;
 }
 
@@ -64,13 +68,13 @@ h1 {
   background-image: url(./img/meme1.jpg);
 }
 #slide2 {
-  background-image: url(./img/meme2.jpg);
+  background-image: url(./img/meme2.png);
 }
 #slide3 {
-  background-image: url(./img/img1.jpg);
+  background-image: url(./img/meme3.jpg);
 }
 #slide4 {
-  background-image: url(./img/img2.jpg);
+  background-image: url(./img/meme4.png);
 }
 
 input[type='radio'] {
@@ -95,11 +99,13 @@ input[type='radio'] {
 .nav {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   grid-row-start: 2;
   grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
   z-index: 2;
+  background-color: var(--bg-color);
 }
 label {
   width: 2rem; 
@@ -108,7 +114,7 @@ label {
   border-color: red;
   border-radius: 50%;
   cursor: pointer;
-  margin: 1rem;
+  margin: 1rem 0 1rem 1rem;
 }
 label:hover {
   background-color: brown;
@@ -119,4 +125,13 @@ label:hover {
 #inp3:checked ~ .nav .label__slide3,
 #inp4:checked ~ .nav .label__slide4 {
   background-color: cadetblue;
+}
+
+.copyright {
+  align-self:flex-end;
+  padding-right: .5rem;
+}
+.copyright,
+.copyright a {
+  font-size: .8rem;
 }
