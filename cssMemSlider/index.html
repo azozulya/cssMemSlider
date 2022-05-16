@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>CssMemSlider</title>
+</head>
+<body>
+  <section class="section">
+    <div class="slider">
+      <input type="radio" name="slide" id="inp1" checked>
+      <input type="radio" name="slide" id="inp2">
+      <input type="radio" name="slide" id="inp3">
+      <input type="radio" name="slide" id="inp4">
+
+      <div class="list">
+        <div id="slide1" class="list__item">
+          <img src="./img/meme1.jpg" alt="" class="list__item-img">
+        </div>
+        <div id="slide2" class="list__item">
+          <img src="./img/meme2.jpg" alt="" class="list__item-img">
+        </div>
+        <div id="slide3" class="list__item">
+          <img src="./img/meme3.jpg" alt="" class="list__item-img">          
+        </div>
+        <div id="slide4" class="list__item">
+          <img src="./img/meme4.jpg" alt="" class="list__item-img">
+        </div>
+      </div>
+
+      <nav class="nav">
+        <label for="inp1" class="label__slide1"><span class="dot"></span></label>
+        <label for="inp2" class="label__slide2"><span class="dot"></span></label>
+        <label for="inp3" class="label__slide3"><span class="dot"></span></label>
+        <label for="inp4" class="label__slide4"><span class="dot"></span></label>
+      </nav>
+
+      <ol class="message">
+        <li class="message__li message__slide1">I'm a programmer!</li>
+        <li class="message__li message__slide2">There is no limit to perfection</li>
+        <li class="message__li message__slide3">Don't give up!</li>
+        <li class="message__li message__slide4">It's a feature</li>
+      </ol>
+    </div>
+  </section>
+</body>
+</html>
